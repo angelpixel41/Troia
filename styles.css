@@ -339,3 +339,117 @@ input, textarea, select { min-width: 0; }
 @media (prefers-reduced-motion: reduce) {
   *,*::before,*::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+
+/* TROIA OFFICIAL PALETTE — inspirado no emblema enviado: preto, vinho e branco.
+   Overrides concentrados aqui para preservar a estrutura responsiva original. */
+:root {
+  --ink: #17191e;
+  --ink-deep: #0b0b0d;
+  --ink-soft: #2a2e36;
+  --surface: #f4f4f5;
+  --paper: #ffffff;
+  --white: #ffffff;
+  --accent: #b1282e;
+  --accent-bright: #c83d42;
+  --accent-deep: #8e1f24;
+  --muted: #6d717b;
+  --line: #dce0e3;
+}
+::selection { background: #b1282e; color: #fff; }
+:focus-visible { outline-color: #b1282e; }
+.skip-link { color: #fff; }
+.utility-bar { background: #0b0b0d; color: #d8d9dd; }
+.utility-inner a { color: #e6e6e8; }
+.utility-inner a:hover, .utility-inner a span { color: #f1afb0; }
+.status-pip { background: #c83d42; box-shadow: 0 0 0 4px rgba(177,40,46,.16); }
+.site-header { background: rgba(255,255,255,.97); border-bottom-color: rgba(15,15,17,.09); }
+.desktop-nav a { color: #393a42; }
+.desktop-nav a:hover, .desktop-nav a[aria-current="location"] { color: #8e1f24; }
+.brand-accent { color: #b1282e; }
+.brand-subtitle { color: #555761; }
+.button-nav, .button-dark { background: #17191e; color: #fff; }
+.button-nav:hover, .button-dark:hover { background: #8e1f24; }
+.button-primary { background: #b1282e; color: #fff; }
+.button-primary:hover { background: #c83d42; box-shadow: 0 12px 30px rgba(90,0,10,.17); }
+.hero { background: #0b0b0d; color: #fff; }
+.hero-lines { opacity: .15; }
+.hero h1 em, .section-title-light em { color: #edb5b6; }
+.hero-copy > p { color: #c6c6cd; }
+.eyebrow { color: #8e1f24; }
+.eyebrow-light { color: #ef9da1; }
+.text-link:hover { color: #8e1f24; }
+.text-link-light:hover { color: #ef9da1; }
+.hero-footnote { color: #babac2; }
+.hero-footnote strong { color: #f5f5f5; }
+.hero-footnote-icon { border-color: #73747d; color: #f1b3b6; }
+.hero-image-wrap { background: #25252a; }
+.hero-image-tint { background: linear-gradient(180deg, rgba(10,10,12,.03) 45%,rgba(10,10,12,.78)); }
+.hero-photo-label span { color: #efb0b3; }
+.hero-sidecard { background: #b1282e; color: #fff; box-shadow: 0 30px 50px rgba(0,0,0,.28); }
+.hero-bottom { color: #a0a1ac; }
+.hero-bottom span span { color: #f1b3b6; }
+.brands-intro { background: #fff; }
+.section-kicker { color: #8e1f24; }
+.brand-disclaimer { color: #70747a; }
+.section-title em { color: #9b232a; }
+.about-section, .audience-section { background: #f4f4f5; }
+.section-lead, .audience-right > p { color: #585e68; }
+.fact-dot { color: #b1282e; }
+.fact-label { color: #5f6671; }
+.segments-section { background: #e9eaed; }
+.section-header > p { color: #585e69; }
+.segment-card { background: #fff; }
+.segment-card:hover { background: #fffafa; box-shadow: 0 18px 36px rgba(24,16,18,.09); }
+.segment-index, .segment-arrow { color: #858891; }
+.segment-icon { background: #f5ebed; color: #8e1f24; }
+.segment-card p { color: #606770; }
+.portfolio-section { background: #fff; }
+.portfolio-intro > p:not(.portfolio-note) { color: #5d626b; }
+.portfolio-item:hover { background: #fbf5f5; }
+.portfolio-category { color: #676c75; }
+.portfolio-arrow { color: #a52127; }
+.process-section { background: #f0f0f2; }
+.process-copy > p, .process-step p { color: #626772; }
+.process-step { border-top-color: #d4d5db; }
+.process-step > span { color: #8e1f24; }
+.photo-tag { background: #b1282e; color: #fff; }
+.reach-section, .footer { background: #101014; }
+.reach-header > p, .reach-location p { color: #bfc0c8; }
+.reach-content, .reach-location, .footer-bottom { border-color: #3b3c44; }
+.reach-graphic { background: radial-gradient(ellipse at 48% 50%,#35171b 0,transparent 60%),linear-gradient(135deg,rgba(255,255,255,.03),transparent); }
+.reach-graphic::before { background-image: radial-gradient(#987175 1px,transparent 1px); }
+.reach-ring { border-color: rgba(214,168,175,.2); }
+.reach-route { border-top-color: #e8a3a7; }
+.reach-point i { background: #da666b; border-color: #512c33; box-shadow: 0 0 0 7px rgba(177,40,46,.2); }
+.reach-point small, .reach-graphic-label { color: #bdb0b5; }
+.reach-graphic-label span, .reach-location > span, .reach-location h3 span { color: #f0afb2; }
+.reach-location a { border-color: #99777d; }
+.reach-location a:hover { color: #f4aeb1; }
+.reach-caveat { color: #b1aeb5; }
+.audience-tags span { background: #fff; border-color: #d9d9df; color: #41434e; }
+.contact-section { background: #202026; }
+.contact-intro > p { color: #c4c4cd; }
+.contact-details { border-color: #494951; }
+.contact-details a { border-color: #494951; }
+.contact-details a:hover strong { color: #f2b1b4; }
+.contact-details a > span:last-child, .contact-icon { color: #efb0b3; }
+.contact-details small { color: #c0a3aa; }
+.contact-icon { border-color: #75717b; }
+.form-panel { background: #fff; }
+.form-heading { color: #8e1f24; }
+.form-panel > p { color: #606570; }
+.field label span { color: #8e1f24; }
+.field input, .field textarea, .field select { background: #fafafa; border-color: #dadbe0; }
+.field input:focus, .field textarea:focus, .field select:focus { outline-color: #b1282e; }
+.form-feedback { color: #6e474b; }
+.footer-brand-column > p, .footer-group a { color: #cbcad0; }
+.footer-group h3 { color: #f0aeb0; }
+.footer-group a:hover, .footer-bottom a:hover { color: #f0aeb0; }
+.footer-bottom { color: #b6b6be; }
+.footer-bottom a { color: #f6f6f6; }
+.brand-footer .brand-subtitle { color: #eeeef1; }
+.brand-footer .brand-name { color: #fff; }
+@media(max-width:850px) {
+  .mobile-nav:not([hidden]) { background: #fff; }
+  .mobile-nav .mobile-cta { color: #8e1f24; }
+}
