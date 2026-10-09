@@ -59,3 +59,7 @@
 - [Registro público da filial](https://consultacnpj.com/cnpj/troia-distribuicao-e-logistica-de-alimentos-ltda-troia-distribuicao-e-logistica-30687910000236).
 - [Instagram indicado como oficial](https://www.instagram.com/troiadistribuicao/).
 - [Licença Unsplash](https://unsplash.com/license) — fotografias ilustrativas.
+
+## Domínio de lançamento definido em 09/10/2026
+
+O solicitante escolheu **https://troia.pixelinfinite.com.br** para esta publicação. Por isso, canonical, Open Graph, JSON-LD, sitemap.xml e robots.txt devem referenciar o subdomínio e não o domínio institucional anterior. A caixa de e-mail de atendimento da Tróia **não** deve mudar por causa da hospedagem.
