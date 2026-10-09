@@ -53,3 +53,14 @@ Sem framework e sem dependências externas obrigatórias para renderizar. Fontes
 ## Atualização de unidade (09/10/2026)
 
 O responsável confirmou que **a única sede/atuação apresentada publicamente é Brasília/DF**. Removidas as alegações de unidade em Goiânia/GO e do mapa de duas unidades. Registros públicos antigos não devem ser usados para atribuir filiais atuais à empresa.
+
+## Vitrine visual (09/10/2026)
+
+- Seção de marcas reformulada com cards responsivos de produtos **Pilão**, **Marilan** e **Veja**. São imagens de embalagens reais obtidas em páginas de varejistas; **não** implicam que todas as variantes estejam em estoque ou que a Tróia represente oficialmente todas as linhas.
+- URLs e respectivas origens: [Pilão 500 g](https://marche.com.br/products/cafe-pilao-torrado-e-moido-tradicional-abre-fecha-500g); [Marilan Maizena 300 g](https://www.savegnago.com.br/biscoito-marilan-maizena-300g/p); [Veja Limpeza Pesada 500 ml](https://mercado.carrefour.com.br/limpador-para-limpeza-pesada-original-veja-500ml-182621/p).
+- As imagens são carregadas dos sites citados (hotlinks). Confirmar permissão de uso das fotos para marketing com as marcas e, quando autorizado, salvar cópias otimizadas sob controle da empresa; links externos podem mudar.
+
+## Localização confirmada pelo responsável (09/10/2026)
+
+- Destino exato fornecido para navegação: **https://maps.app.goo.gl/6m6P86gjo4dtgm1T8**. O link substitui a busca aproximada por um endereço genérico do SIA.
+- Nenhuma numeração ou CEP específicos são exibidos/publicados como endereço físico operacional até confirmação de que o endereço no cadastro coincide com o marcador enviado.
