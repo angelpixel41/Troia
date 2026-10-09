@@ -489,3 +489,62 @@ input, textarea, select { min-width: 0; }
 .brand-image { height: 76px; object-fit: cover; object-position: center top; }
 .brand-footer .brand-image { width: 110px; height: 95px; object-fit: cover; object-position: center top; }
 @media (max-width: 620px) { .brand-image { width:73px; height:63px; } .brand-footer .brand-image { width:110px; height:95px; } }
+
+/* Vitrine de marcas / imagens reais de embalagens — 2026-10-09 */
+.products-header { display:grid; grid-template-columns:minmax(0,1.3fr) minmax(270px,.7fr); gap:clamp(35px,7vw,100px); align-items:end; margin-bottom:45px; }
+.products-header .section-title { margin-bottom:0; }
+.products-heading-side { padding-bottom:10px; }
+.products-heading-side p { font-size:15px; line-height:1.85; color:#61616a; margin:0 0 24px; }
+.product-showcase { display:grid; grid-template-columns:1.14fr 1fr 1fr; gap:15px; }
+.product-feature { position:relative; display:flex; flex-direction:column; min-width:0; min-height:535px; overflow:hidden; isolation:isolate; border:1px solid rgba(25,25,28,.07); }
+.product-feature-pilao { background:linear-gradient(143deg,#68191e 0%,#a3262e 58%,#461217 100%); color:#fff; }
+.product-feature-marilan { background:linear-gradient(155deg,#ffead2 0%,#ffe1bf 58%,#fff7ec 100%); color:#361819; }
+.product-feature-veja { background:linear-gradient(155deg,#c6e3fb 0%,#d8e9f6 53%,#f0f6fd 100%); color:#162d50; }
+.product-feature-top { position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between; gap:12px; padding:26px 26px 0; font-size:10px; font-weight:800; letter-spacing:.11em; }
+.product-feature-index { opacity:.57; white-space:nowrap; }
+.product-feature-image { position:relative; display:grid; place-items:center; height:280px; margin:8px 25px 0; overflow:hidden; }
+.product-feature-halo { position:absolute; width:235px; aspect-ratio:1; border-radius:50%; background:rgba(255,255,255,.25); filter:blur(2px); }
+.product-feature-pilao .product-feature-halo { background:rgba(255,192,169,.15); }
+.product-feature-veja .product-feature-halo { background:rgba(255,255,255,.43); }
+.product-feature-image img { position:relative; z-index:1; display:block; max-width:90%; width:auto; height:245px; object-fit:contain; border-radius:5px; box-shadow:0 22px 36px rgba(0,0,0,.12); transition:transform .4s ease; }
+.product-feature:hover .product-feature-image img { transform:translateY(-8px) rotate(-1deg) scale(1.02); }
+.product-feature-info { position:relative; z-index:2; display:flex; flex-direction:column; align-items:flex-start; flex:1; padding:14px 27px 28px; }
+.product-brand { font-family:var(--font-display); font-size:38px; font-weight:800; line-height:1.1; letter-spacing:-.075em; }
+.product-brand-pilao { color:#fff; font-style:italic; }
+.product-brand-marilan { color:#d12f28; font-style:italic; }
+.product-brand-veja { color:#004baf; font-style:italic; }
+.product-feature-info h3 { font:800 19px/1.33 var(--font-display); letter-spacing:-.045em; margin:13px 0 7px; }
+.product-feature-info p { font-size:12px; line-height:1.7; opacity:.8; margin:0 0 21px; }
+.product-feature-info a { display:inline-flex; align-items:center; gap:19px; border-bottom:1px solid currentColor; padding-bottom:6px; margin-top:auto; font-size:11px; font-weight:800; }
+.product-feature-info a span { font-size:19px; font-weight:400; }
+.product-feature-info a:hover { opacity:.65; }
+.product-categories { display:grid; grid-template-columns:minmax(200px,1fr) minmax(340px,1.5fr) auto; align-items:center; gap:28px; padding:31px 35px; margin-top:16px; background:#17171b; color:#fff; }
+.product-categories-kicker { font-size:10px; letter-spacing:.14em; font-weight:800; color:#e59b9f; }
+.product-categories-intro h3 { font:800 20px/1.34 var(--font-display); letter-spacing:-.045em; margin:8px 0 0; }
+.product-category-chips { display:flex; flex-wrap:wrap; gap:8px; }
+.product-category-chips span { border:1px solid #56565e; padding:10px 11px; font-size:11px; color:#e5e4e8; }
+.product-categories .button { border-color:#b52e35; background:#a9272e; color:#fff; }
+.product-categories .button:hover { background:#bb3740; }
+.product-disclaimer { max-width:1050px; font-size:10px; line-height:1.75; color:#7f8389; margin:22px 0 0; }
+@media(max-width:1050px) {
+  .product-showcase { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .product-feature-pilao { grid-column:1/-1; }
+  .product-feature-pilao .product-feature-image { height:250px; }
+  .product-feature { min-height:510px; }
+  .product-feature-pilao { min-height:465px; }
+  .product-categories { grid-template-columns:1fr auto; }
+  .product-category-chips { grid-column:1/-1; grid-row:2; }
+}
+@media(max-width:700px) {
+ .products-header { grid-template-columns:1fr; gap:18px; }
+ .products-heading-side { padding-bottom:0; }
+ .product-showcase { grid-template-columns:1fr; gap:12px; }
+ .product-feature-pilao { grid-column:auto; }
+ .product-feature { min-height:495px; }
+ .product-feature-image { height:265px; }
+ .product-feature-image img { height:234px; }
+ .product-categories { grid-template-columns:1fr; padding:25px; gap:19px; }
+ .product-category-chips { grid-column:auto; grid-row:auto; }
+ .product-categories .button { width:100%; justify-content:space-between; }
+}
+@media(prefers-reduced-motion:reduce) { .product-feature-image img { transition:none; } }
