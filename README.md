@@ -4,12 +4,12 @@ Site institucional responsivo da **Tróia Distribuição**, voltado a clientes e
 
 ## Executar localmente
 
-O site é estático (HTML, CSS e JavaScript sem build). Abra `index.html` diretamente no navegador ou execute `python -m http.server 8080` e acesse `http://localhost:8080`.
+O site é estático (HTML, CSS e JavaScript sem build). Execute `python -m http.server 8080` na pasta do repositório e acesse `http://localhost:8080`. Use um servidor HTTP local porque os recursos usam caminhos absolutos.
 
 ## Publicar no Cloudflare Pages
 
 1. Cloudflare > Workers & Pages > Create > Connect to Git > `angelpixel41/Troia`.
-2. Framework: **None**. Build command: **(vazio)**. Output directory: **/** (raiz).
+2. Framework: **None**. Build command: **(vazio)**. Output directory: **.** (raiz do repositório).
 3. Adicione o domínio `troiadistribuicao.com.br` em Custom domains **somente após autorizar a substituição do site atual** e configurar o DNS do domínio.
 4. Merges em `main` farão novos deploys. Um preview no `*.pages.dev` pode ser validado antes de apontar o domínio.
 
