@@ -6,7 +6,8 @@
 ## Identidade e mídia
 
 - [ ] Solicitar arquivo **oficial** do logotipo da Tróia (SVG/PNG vetorial) e manual com cores, tipografia e usos.
-- [ ] Substituir o wordmark tipográfico provisório do cabeçalho e o favicon provisório pelo material oficial. **Não utilizar marcas criadas por terceiros como se fossem oficiais.**
+- [x] Substituído o wordmark tipográfico e o favicon pelos arquivos derivados da imagem oficial enviada pelo responsável, preservando a arte do emblema.
+- [ ] Obter versão atualizada em SVG/PNG HD sem a inscrição geográfica antiga `DF-GO` que ainda está na imagem original; não inventar símbolo ou redesenhar a marca.
 - [ ] Solicitar fotos **autorizadas** do centro de distribuição, frota, equipe e fachadas. No momento as fotos do site são externas e ilustrativas (Unsplash); não representam a Tróia.
 - [ ] Solicitar artes oficiais das marcas exibidas (**Pilão, Marilan, Veja, Reckitt**) e aprovação para uso público no site. Os nomes exibidos no MVP são texto estilizado, não reproduções fiéis dos logotipos.
 - [ ] Confirmar outras marcas do mix, SKUs, categorias e política de disponibilidade. Não sugerir distribuição exclusiva.
@@ -15,18 +16,18 @@
 
 **Empresa vinculada ao domínio e às redes:** 
 - Tróia Distribuição de Alimentos Ltda — CNPJ **30.687.910/0001-55**, aberta em 13/06/2018, sede Brasília/DF.
-- Filial Tróia Distribuição e Logística — CNPJ **30.687.910/0002-36**, Goiânia/GO, aberta em 14/09/2021.
-- Fontes: [Casa dos Dados (matriz)](https://casadosdados.com.br/solucao/cnpj/troia-distribuicao-de-alimentos-ltda-30687910000155), [ConsultaCNPJ (filial)](https://consultacnpj.com/cnpj/troia-distribuicao-e-logistica-de-alimentos-ltda-troia-distribuicao-e-logistica-30687910000236), [LinkedIn da empresa](https://br.linkedin.com/company/troiadistribuicao).
+- **Situação operacional corrigida pelo responsável:** apenas Brasília/DF. Referências comerciais anteriores a Goiânia/GO não devem ser tratadas como atuais.
+- Fontes: [Casa dos Dados](https://casadosdados.com.br/solucao/cnpj/troia-distribuicao-de-alimentos-ltda-30687910000155), [LinkedIn da empresa](https://br.linkedin.com/company/troiadistribuicao) e confirmação operacional direta do responsável (esta última prevalece sobre dados antigos de diretórios).
 
 > Atenção: um relatório preliminar havia associado indevidamente o nome "Tróia" à UNIEX AÇÚCAR DO BRASIL S/A, CNPJ 54.892.488/0004-80. **Não usar esse dado no site.** A correspondência pública consistente com o domínio, a marca e o LinkedIn é a Tróia Distribuição de Alimentos Ltda.
 
 ## Informações que precisam de aprovação
 
 - [ ] Confirmar **telefone comercial** (61) 3042-9190, apresentado em cadastros empresariais. É número fixo: **não divulgar como WhatsApp sem teste e confirmação**.
-- [ ] Confirmar se o e-mail comercial \`comercial@troiadistribuicao.com.br\` (publicado no cadastro da filial) continua recebendo mensagens e atende à matriz. Substituir por contato oficial preferido, se houver.
-- [ ] Confirmar endereço e horário de visita da matriz. O cadastro oficial indica SIA Trecho 17 Rua 04 Lote 255 e Rua 08 Lote 30/50, Brasília/DF; LinkedIn lista SIA Trecho 17 Rua 08, 105 (CEP diferente).
-- [ ] Confirmar endereço operacional da filial em Goiânia; o registro CNPJ e o LinkedIn indicam locais diferentes. O site atualmente cita apenas a cidade.
-- [ ] Validar se os estados DF e GO têm cobertura **integral ou parcial**. Não divulgar prazos/frete de entrega até definição comercial.
+- [ ] Confirmar se o e-mail comercial \`comercial@troiadistribuicao.com.br\` (citado em cadastros públicos) continua recebendo mensagens e atende à matriz. Substituir por contato oficial preferido, se houver.
+- [ ] Confirmar endereço e horário de visita da unidade em Brasília. O cadastro oficial indica SIA Trecho 17 Rua 04 Lote 255 e Rua 08 Lote 30/50, Brasília/DF; LinkedIn lista SIA Trecho 17 Rua 08, 105 (CEP diferente).
+- [x] Retiradas a segunda localização, indicação de filial e a referência à cidade de Goiânia da página pública.
+- [ ] Validar a cobertura efetiva em Brasília/DF. Não divulgar atendimento em Goiás ou prazos/frete de entrega sem confirmação comercial.
 - [ ] Confirmar segmentos exatos atendidos (atacado, varejo, food service, suplementação) e revisar textos da homepage.
 - [ ] Atualizar política de privacidade caso sejam introduzidos backend, cookies analíticos, formulário coletor de leads ou CRM. O MVP **não armazena os dados digitados**.
 - [ ] Aprovar menção às marcas, seu uso visual e descrições (Pilão/Marilan/Veja/Reckitt foram indicadas pelo solicitante; a relação contratual não foi comprovada publicamente).
@@ -54,12 +55,15 @@
 
 ## Referências editoriais
 
-- [LinkedIn institucional](https://br.linkedin.com/company/troiadistribuicao) — posicionamento "Construindo Grandes Marcas", segmentos, DF/GO.
+- [LinkedIn institucional](https://br.linkedin.com/company/troiadistribuicao) — posicionamento "Construindo Grandes Marcas" e segmentos; cobertura geográfica desatualizada foi retirada.
 - [Registro público da matriz](https://casadosdados.com.br/solucao/cnpj/troia-distribuicao-de-alimentos-ltda-30687910000155).
-- [Registro público da filial](https://consultacnpj.com/cnpj/troia-distribuicao-e-logistica-de-alimentos-ltda-troia-distribuicao-e-logistica-30687910000236).
 - [Instagram indicado como oficial](https://www.instagram.com/troiadistribuicao/).
 - [Licença Unsplash](https://unsplash.com/license) — fotografias ilustrativas.
 
 ## Domínio de lançamento definido em 09/10/2026
 
 O solicitante escolheu **https://troia.pixelinfinite.com.br** para esta publicação. Por isso, canonical, Open Graph, JSON-LD, sitemap.xml e robots.txt devem referenciar o subdomínio e não o domínio institucional anterior. A caixa de e-mail de atendimento da Tróia **não** deve mudar por causa da hospedagem.
+
+## Correção prioritária: Brasília/DF
+
+Em 09/10/2026, o responsável informou que a filial de Goiânia não existe mais. É incorreto apresentar o endereço, o mapa, a cobertura ou o atendimento de Goiás como atuais. O site deve apresentar **exclusivamente Brasília/DF**. O logotipo original contém ainda a inscrição histórica `DF-GO`: manter o arquivo fiel à arte enviada, mas solicitar arte oficial atualizada ao responsável.

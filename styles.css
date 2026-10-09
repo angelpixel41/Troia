@@ -453,3 +453,33 @@ input, textarea, select { min-width: 0; }
   .mobile-nav:not([hidden]) { background: #fff; }
   .mobile-nav .mobile-cta { color: #8e1f24; }
 }
+
+/* Atualização oficial — identidade Tróia + unidade única em Brasília */
+.site-header { background: #0b0b0d; border-bottom-color: #313136; }
+.site-header .desktop-nav a { color: #eeeef0; }
+.site-header .desktop-nav a:hover, .site-header .desktop-nav a[aria-current="location"] { color: #eea7aa; }
+.site-header .button-nav { background: #a9272e; color: #fff; }
+.site-header .button-nav:hover { background: #c33a41; }
+.brand-image { display:block; width:88px; height:88px; object-fit:contain; }
+.nav-inner { min-height: 94px; }
+.brand-footer .brand-image { width:110px; height:110px; }
+.hero-sidecard { width: 223px; }
+.hero-sidecard .sidecard-title { font-size: 27px; letter-spacing: -.06em; word-break: normal; }
+.reach-content-single .reach-graphic { min-height: 340px; }
+.reach-graphic-single .point-df { left: 38%; top: 46%; }
+.reach-locations-single { display: block; }
+.reach-graphic-single .reach-graphic-label { color:#e0c7cb; }
+.menu-toggle { background: #25252a; border-color: #55555c; }
+.menu-toggle span { background: #fff; }
+@media (max-width: 850px) {
+ .mobile-nav:not([hidden]) { background: #19191f; }
+ .mobile-nav a { color: #f6f6f7; border-color: #42424b; }
+ .mobile-nav .mobile-cta { color: #eea7aa; }
+}
+@media (max-width:620px) {
+ .brand-image { width:73px; height:73px; }
+ .brand-footer .brand-image { width:110px; height:110px; }
+ .hero-sidecard { width: 164px; }
+ .hero-sidecard .sidecard-title { font-size: 22px; letter-spacing: -.055em; }
+ .reach-graphic-single .point-df { left:32%; top:43%; }
+}
