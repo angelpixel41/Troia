@@ -67,3 +67,12 @@ O solicitante escolheu **https://troia.pixelinfinite.com.br** para esta publica�
 ## Correção prioritária: Brasília/DF
 
 Em 09/10/2026, o responsável informou que a filial de Goiânia não existe mais. É incorreto apresentar o endereço, o mapa, a cobertura ou o atendimento de Goiás como atuais. O site deve apresentar **exclusivamente Brasília/DF**. O logotipo original contém ainda a inscrição histórica `DF-GO`: manter o arquivo fiel à arte enviada, mas solicitar arte oficial atualizada ao responsável.
+
+## Atualização de localização e vitrine de produtos (09/10/2026)
+
+- [x] Botão de localização atualizado para o ponto exato fornecido pelo responsável: https://maps.app.goo.gl/6m6P86gjo4dtgm1T8.
+- [x] Removidos do JSON-LD os campos de endereço físico e CEP derivados exclusivamente de cadastros que apontavam local impreciso. Brasília/DF permanece como localização institucional confirmada.
+- [x] Criada vitrine editorial com imagens de embalagens Pilão, Marilan e Veja, fonte em páginas de varejo identificadas no README.
+- [ ] Confirmar autorização/licenciamento das imagens de produtos para exibição comercial no website.
+- [ ] Confirmar quais linhas específicas realmente integram o mix atual; vitrine é demonstrativa, não catálogo de SKUs.
+- [ ] Informar endereço escrito exato e referência para visita caso desejem publicar texto de endereço além do link de Maps.
