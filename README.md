@@ -10,8 +10,8 @@ O site é estático (HTML, CSS e JavaScript sem build). Execute `python -m http.
 
 1. Cloudflare > Workers & Pages > Create > Connect to Git > `angelpixel41/Troia`.
 2. Framework: **None**. Build command: **(vazio)**. Output directory: **.** (raiz do repositório).
-3. Adicione o domínio `troiadistribuicao.com.br` em Custom domains **somente após autorizar a substituição do site atual** e configurar o DNS do domínio.
-4. Merges em `main` farão novos deploys. Um preview no `*.pages.dev` pode ser validado antes de apontar o domínio.
+3. Adicione o subdomínio `troia.pixelinfinite.com.br` em **Custom domains** do projeto Pages, mantendo o site principal `pixelinfinite.com.br` intacto. Se a zona estiver no mesmo Cloudflare, o DNS CNAME será sugerido automaticamente.
+4. Merges em `main` farão novos deploys. Valide primeiro o preview `*.pages.dev` antes de ativar o subdomínio.
 
 ## Conteúdo e identidade
 
@@ -29,6 +29,13 @@ O site é estático (HTML, CSS e JavaScript sem build). Execute `python -m http.
 - [Registro da filial em Goiânia — CNPJ 30.687.910/0002-36](https://consultacnpj.com/cnpj/troia-distribuicao-e-logistica-de-alimentos-ltda-troia-distribuicao-e-logistica-30687910000236).
 - [Instagram oficial](https://www.instagram.com/troiadistribuicao/).
 - Declarações do solicitante sobre marcas distribuídas.
+
+## Domínio de lançamento
+
+- Domínio escolhido: **https://troia.pixelinfinite.com.br**.
+- Não modificar registros DNS do domínio raiz `pixelinfinite.com.br`.
+- Os metadados SEO, canonical, schema.org, sitemap e robots foram ajustados para o subdomínio.
+- Os e-mails comerciais terminados em `@troiadistribuicao.com.br` permanecem inalterados (devem ser confirmados com a empresa).
 
 ## Estrutura
 
