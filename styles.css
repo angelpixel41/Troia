@@ -483,3 +483,9 @@ input, textarea, select { min-width: 0; }
  .hero-sidecard .sidecard-title { font-size: 22px; letter-spacing: -.055em; }
  .reach-graphic-single .point-df { left:32%; top:43%; }
 }
+
+/* Oculta apenas a inscrição geográfica antiga "DF-GO" na exibição da arte
+   original enviada. O arquivo-fonte permanece fiel e sem redesenho. */
+.brand-image { height: 76px; object-fit: cover; object-position: center top; }
+.brand-footer .brand-image { width: 110px; height: 95px; object-fit: cover; object-position: center top; }
+@media (max-width: 620px) { .brand-image { width:73px; height:63px; } .brand-footer .brand-image { width:110px; height:95px; } }
