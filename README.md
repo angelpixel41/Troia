@@ -19,7 +19,7 @@ O site é estático (HTML, CSS e JavaScript sem build). Execute `python -m http.
 - Logotipo fornecido pelo responsável no chat, reproduzido como imagem raster, sem recriação. O favicon usa recorte do emblema original. O arquivo original possui a inscrição geográfica legada `DF-GO`; será necessário obter da empresa a arte oficial atualizada sem essa inscrição para substituir o arquivo futuramente.
 - Os nomes **Pilão, Marilan, Veja e Reckitt** aparecem como referências ao portfólio informado; não se declara exclusividade ou contrato formal.
 - Fotografias de logística são **ilustrativas** (Unsplash), não representam instalações, pessoas ou veículos da Tróia.
-- Não há carrinho nem catálogo/SKU/tabela de preços inventados. Pedidos de orçamento abrem o cliente de e-mail do visitante. Sem backend, não são registrados ou enviados automaticamente.
+- Não há carrinho nem catálogo/SKU/tabela de preços inventados. O formulário comercial é uma simulação local: valida campos e apresenta confirmação demonstrativa, sem enviar e-mails, fazer requisições ou armazenar dados.
 - Antes do lançamento oficial, obtenha aprovação dos responsáveis pelos dados de contato, endereço, uso dos logotipos das marcas e texto do portfólio. Veja `docs/validacao-publicacao.md`.
 
 ## Fontes públicas consultadas (09/10/2026)
@@ -40,7 +40,7 @@ O site é estático (HTML, CSS e JavaScript sem build). Execute `python -m http.
 
 - `index.html` — homepage institucional e metadados SEO.
 - `styles.css` — design system, responsividade e acessibilidade.
-- `script.js` — menu mobile, navegação e geração de e-mail pré-preenchido.
+- `script.js` — menu mobile, navegação e validação local do formulário de demonstração.
 - `assets/troia-logo-original.webp` — imagem do logotipo fornecida pela empresa (inclui inscrição legada na imagem).
 - `assets/troia-emblem-favicon.webp` — recorte do emblema do logotipo utilizado no favicon.
 - `robots.txt` e `sitemap.xml` — descoberta de conteúdo.
