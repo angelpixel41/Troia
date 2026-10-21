@@ -15,7 +15,7 @@ O domínio `troia.pixelinfinite.com.br` usa o Worker `troia`. Publique pelo Powe
 - O conteúdo combina informações institucionais do LinkedIn, registros empresariais e marcas citadas pelo solicitante.
 - Logotipo fornecido pelo responsável no chat, reproduzido como imagem raster, sem recriação. O favicon usa recorte do emblema original. O arquivo original possui a inscrição geográfica legada `DF-GO`; será necessário obter da empresa a arte oficial atualizada sem essa inscrição para substituir o arquivo futuramente.
 - Os nomes **Pilão, Marilan, Veja e Reckitt** aparecem como referências ao portfólio informado; não se declara exclusividade ou contrato formal.
-- As imagens institucionais, de equipe e de categorias foram recuperadas do site original da Tróia. As cópias usadas no site são otimizadas e locais; os materiais brutos foram preservados para referência.
+- As imagens de equipe e de categorias foram recuperadas do site original da Tróia. O caminhão ilustrativo `hero-truck-troia.webp` foi removido do site e do pacote publicado por ser uma arte gerada por IA; os diferenciais agora aparecem em uma composição tipográfica sem essa imagem.
 - Não há carrinho nem catálogo/SKU/tabela de preços inventados. O contato comercial usa links diretos para WhatsApp, telefone e e-mail. O site não coleta nem armazena dados por formulário.
 - Antes do lançamento oficial, obtenha aprovação dos responsáveis pelos dados de contato, endereço, uso dos logotipos das marcas e texto do portfólio. Veja `docs/validacao-publicacao.md`.
 

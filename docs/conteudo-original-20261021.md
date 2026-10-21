@@ -10,7 +10,7 @@ Os arquivos brutos ficam em `assets/original/`, ignorados pelo Git e excluídos 
 
 Os logotipos foram reduzidos para o tamanho adequado de exibição e codificados em WebP lossless, preservando cores e transparência. As imagens de categoria, equipe e operação usam WebP otimizado. As embalagens Pilão, Marilan e Veja já aprovadas não foram modificadas.
 
-O conjunto publicado dos 18 logotipos ocupa aproximadamente 323 kB, e o conjunto de sete imagens institucionais/categorias aproximadamente 858 kB. As imagens abaixo da abertura usam carregamento adiado.
+O conjunto publicado dos 18 logotipos ocupa aproximadamente 323 kB. A ilustração de caminhão gerada por IA foi retirada da vitrine e do pacote publicado; a seção de diferenciais foi ajustada para não depender dessa imagem.
 
 ## Conteúdo
 
@@ -24,7 +24,7 @@ O conjunto publicado dos 18 logotipos ocupa aproximadamente 323 kB, e o conjunto
 
 ## Geografia
 
-O usuário confirmou nesta conversa a atualização da atuação para **Distrito Federal e Goiás**, substituindo a orientação anterior de limitar a apresentação ao DF. Brasília permanece como a base da operação; não foi inventada uma unidade em Goiânia ou em outra cidade. Conteúdo, visão, indicadores, representação de cobertura e metadados foram atualizados. As imagens institucionais mantêm as artes disponibilizadas no site de origem.
+O usuário confirmou nesta conversa a atualização da atuação para **Distrito Federal e Goiás**, substituindo a orientação anterior de limitar a apresentação ao DF. Brasília permanece como a base da operação; não foi inventada uma unidade em Goiânia ou em outra cidade. Conteúdo, visão, indicadores, representação de cobertura e metadados foram atualizados. As imagens de equipe e categorias vêm do site de origem. A arte de caminhão gerada por IA foi removida após solicitação do usuário.
 
 ## Arquitetura
 
