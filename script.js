@@ -55,49 +55,21 @@
     sections.forEach((section) => observer.observe(section));
   }
 
+  // Formulário exclusivamente demonstrativo: valida localmente, sem rede,
+  // e-mail, cookies ou persistência de informações pessoais.
   const form = document.getElementById("contact-form");
   const feedback = document.getElementById("form-feedback");
   if (form && feedback) {
     form.addEventListener("submit", (event) => {
       event.preventDefault();
       if (!form.reportValidity()) return;
-
-      const read = (id) => document.getElementById(id).value.trim();
-      const name = read("contact-name");
-      const company = read("contact-company");
-      const city = read("contact-city");
-      const phone = read("contact-phone");
-      const topic = read("contact-topic");
-      const message = read("contact-message");
-
-      if (!name || !company || !city || !phone) {
-        feedback.textContent = "Preencha os campos obrigatórios antes de continuar.";
+      const required = ["contact-name", "contact-company", "contact-city", "contact-phone"];
+      if (required.some((id) => !document.getElementById(id).value.trim())) {
+        feedback.textContent = "Preencha os campos obrigatórios para testar.";
         return;
       }
-
-      const subject = "Contato comercial | Tróia Distribuição | " + company;
-      const lines = [
-        "Olá, equipe Tróia Distribuição!",
-        "",
-        "Gostaria de solicitar informações comerciais.",
-        "",
-        "Nome: " + name,
-        "Empresa: " + company,
-        "Cidade / UF: " + city,
-        "Telefone: " + phone,
-        "Interesse: " + topic,
-        "",
-        "Mensagem:",
-        message || "Gostaria de conhecer as possibilidades de atendimento.",
-        "",
-        "Enviado pelo formulário do site institucional."
-      ];
-
-      const target = "mailto:comercial@troiadistribuicao.com.br?subject=" +
-        encodeURIComponent(subject) + "&body=" + encodeURIComponent(lines.join("\n"));
-
-      feedback.textContent = "Seu aplicativo de e-mail será aberto. Revise a mensagem e clique em enviar para concluir o contato.";
-      window.location.href = target;
+      form.reset();
+      feedback.textContent = "Formulário demonstrado com sucesso. Os dados foram validados, mas nenhuma mensagem foi enviada ou armazenada.";
     });
   }
 
