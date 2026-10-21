@@ -15,9 +15,27 @@
         if (!product.hidden) visible++;
       });
       showcase.classList.toggle("is-filtered", category !== "all");
-      filterStatus.textContent = visible === 1 ? "1 marca na vitrine" : visible + " marcas na vitrine";
+      filterStatus.textContent = visible === 1 ? "1 destaque do portfólio" : visible + " destaques do portfólio";
     });
   });
+
+  const brandSearch = document.getElementById("brand-search");
+  const partnerCards = Array.from(document.querySelectorAll(".partner-card"));
+  const partnerCount = document.querySelector(".partner-count");
+  const partnerEmpty = document.querySelector(".partner-empty");
+  const normalizeBrand = (value) => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
+  if (brandSearch && partnerCount && partnerEmpty) {
+    brandSearch.addEventListener("input", () => {
+      const query = normalizeBrand(brandSearch.value.trim());
+      let matches = 0;
+      partnerCards.forEach((card) => {
+        card.hidden = !normalizeBrand(card.dataset.brand + " " + (card.dataset.alias || "")).includes(query);
+        if (!card.hidden) matches++;
+      });
+      partnerCount.textContent = matches === 1 ? "1 marca parceira" : matches + " marcas parceiras";
+      partnerEmpty.hidden = matches !== 0;
+    });
+  }
 
   const progress = document.querySelector(".scroll-progress");
   let scrollPending = false;
@@ -67,7 +85,7 @@
     });
 
     window.addEventListener("resize", () => {
-      if (window.innerWidth > 850 && !mobileNav.hidden) closeMenu();
+      if (window.innerWidth > 1050 && !mobileNav.hidden) closeMenu();
     });
   }
 
@@ -87,24 +105,6 @@
       });
     }, { rootMargin: "-28% 0px -60% 0px" });
     sections.forEach((section) => observer.observe(section));
-  }
-
-  // Formulário exclusivamente demonstrativo: valida localmente, sem rede,
-  // e-mail, cookies ou persistência de informações pessoais.
-  const form = document.getElementById("contact-form");
-  const feedback = document.getElementById("form-feedback");
-  if (form && feedback) {
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      if (!form.reportValidity()) return;
-      const required = ["contact-name", "contact-company", "contact-city", "contact-phone"];
-      if (required.some((id) => !document.getElementById(id).value.trim())) {
-        feedback.textContent = "Preencha os campos obrigatórios para testar.";
-        return;
-      }
-      form.reset();
-      feedback.textContent = "Formulário demonstrado com sucesso. Os dados foram validados, mas nenhuma mensagem foi enviada ou armazenada.";
-    });
   }
 
   const year = document.getElementById("year");

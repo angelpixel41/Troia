@@ -1,6 +1,6 @@
 # Tróia Distribuição — Site institucional
 
-Site institucional responsivo da **Tróia Distribuição**, voltado a clientes empresariais e parceiros comerciais em Brasília, Distrito Federal.
+Site institucional responsivo da **Tróia Distribuição**, voltado a clientes empresariais e parceiros comerciais no Distrito Federal e em Goiás, com base em Brasília.
 
 ## Executar localmente
 
@@ -15,8 +15,8 @@ O domínio `troia.pixelinfinite.com.br` usa o Worker `troia`. Publique pelo Powe
 - O conteúdo combina informações institucionais do LinkedIn, registros empresariais e marcas citadas pelo solicitante.
 - Logotipo fornecido pelo responsável no chat, reproduzido como imagem raster, sem recriação. O favicon usa recorte do emblema original. O arquivo original possui a inscrição geográfica legada `DF-GO`; será necessário obter da empresa a arte oficial atualizada sem essa inscrição para substituir o arquivo futuramente.
 - Os nomes **Pilão, Marilan, Veja e Reckitt** aparecem como referências ao portfólio informado; não se declara exclusividade ou contrato formal.
-- Fotografias de logística são **ilustrativas** (Unsplash), não representam instalações, pessoas ou veículos da Tróia.
-- Não há carrinho nem catálogo/SKU/tabela de preços inventados. O formulário comercial é uma simulação local: valida campos e apresenta confirmação demonstrativa, sem enviar e-mails, fazer requisições ou armazenar dados.
+- As imagens institucionais, de equipe e de categorias foram recuperadas do site original da Tróia. As cópias usadas no site são otimizadas e locais; os materiais brutos foram preservados para referência.
+- Não há carrinho nem catálogo/SKU/tabela de preços inventados. O contato comercial usa links diretos para WhatsApp, telefone e e-mail. O site não coleta nem armazena dados por formulário.
 - Antes do lançamento oficial, obtenha aprovação dos responsáveis pelos dados de contato, endereço, uso dos logotipos das marcas e texto do portfólio. Veja `docs/validacao-publicacao.md`.
 
 ## Fontes públicas consultadas (09/10/2026)
@@ -63,3 +63,12 @@ O responsável confirmou que **a única sede/atuação apresentada publicamente 
 
 - Destino exato fornecido para navegação: **https://maps.app.goo.gl/6m6P86gjo4dtgm1T8**. O link substitui a busca aproximada por um endereço genérico do SIA.
 - Nenhuma numeração ou CEP específicos são exibidos/publicados como endereço físico operacional até confirmação de que o endereço no cadastro coincide com o marcador enviado.
+
+
+## Expansão com o conteúdo do site original (21/10/2026)
+
+O usuário confirmou a atualização da atuação para **Distrito Federal e Goiás**, mantendo Brasília como base. Essa confirmação substitui a orientação geográfica histórica de 09/10/2026 registrada acima.
+
+Foram incorporados os indicadores, missão, visão, valores, quatro categorias, 18 marcas com logotipos originais, diferenciais, carreiras e WhatsApp comercial. A página não replica o backend de recrutamento: usa o portal público existente. Detalhes e fontes em `docs/conteudo-original-20261021.md` e `docs/source-assets.json`.
+
+Os originais em `assets/original/` são mantidos localmente, ignorados pelo Git e excluídos do deploy. As versões publicadas ficam em `assets/brands/` e `assets/company/`.
