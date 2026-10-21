@@ -38,10 +38,12 @@
   }
 
   const progress = document.querySelector(".scroll-progress");
+  const siteHeader = document.querySelector(".site-header");
   let scrollPending = false;
   const updateProgress = () => {
     const total = document.documentElement.scrollHeight - window.innerHeight;
     if (progress) progress.style.width = (total > 0 ? window.scrollY / total * 100 : 0) + "%";
+    if (siteHeader) siteHeader.classList.toggle("is-scrolled", window.scrollY > 18);
     scrollPending = false;
   };
   window.addEventListener("scroll", () => {
@@ -52,6 +54,23 @@
   }, { passive: true });
   window.addEventListener("resize", updateProgress);
   updateProgress();
+
+  const revealTargets = document.querySelectorAll(".purpose-card, .category-card, .product-feature, .partner-card, .difference-list article, .careers-panel, .reach-location, .audience-tags span, .faq details, .commercial-steps li");
+  if (revealTargets.length && "IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.documentElement.classList.add("motion-ready");
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+    revealTargets.forEach((element, index) => {
+      element.dataset.motionReveal = "";
+      element.style.setProperty("--motion-delay", (index % 4) * 65 + "ms");
+      revealObserver.observe(element);
+    });
+  }
 
   const menuButton = document.getElementById("menu-toggle");
   const mobileNav = document.getElementById("mobile-nav");
