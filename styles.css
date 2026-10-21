@@ -506,7 +506,7 @@ input, textarea, select { min-width: 0; }
 .product-feature-halo { position:absolute; width:235px; aspect-ratio:1; border-radius:50%; background:rgba(255,255,255,.25); filter:blur(2px); }
 .product-feature-pilao .product-feature-halo { background:rgba(255,192,169,.15); }
 .product-feature-veja .product-feature-halo { background:rgba(255,255,255,.43); }
-.product-feature-image img { position:relative; z-index:1; display:block; max-width:90%; width:auto; height:245px; object-fit:contain; border-radius:5px; box-shadow:0 22px 36px rgba(0,0,0,.12); transition:transform .4s ease; }
+.product-feature-image img { position:relative; z-index:1; display:block; max-width:90%; width:auto; height:245px; object-fit:contain; filter:drop-shadow(0 18px 16px rgba(0,0,0,.24)); transition:transform .4s ease; }
 .product-feature:hover .product-feature-image img { transform:translateY(-8px) rotate(-1deg) scale(1.02); }
 .product-feature-info { position:relative; z-index:2; display:flex; flex-direction:column; align-items:flex-start; flex:1; padding:14px 27px 28px; }
 .product-brand { font-family:var(--font-display); font-size:38px; font-weight:800; line-height:1.1; letter-spacing:-.075em; }
