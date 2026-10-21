@@ -36,7 +36,7 @@
 
 - [x] HTML semântico e um único H1
 - [x] Navegação responsiva com menu mobile e Escape
-- [x] Links comerciais e formulário que prepara e-mail **sem prometer envio automático**
+- [x] Links de contato e formulário **somente demonstrativo** (sem envio ou armazenamento)
 - [x] Acessibilidade básica: labels, skip link, foco visível, \`prefers-reduced-motion\`
 - [x] Metadados, canonical, dados estruturados, robots e sitemap
 - [x] Página 404, headers de segurança e navegação por âncoras
@@ -76,3 +76,10 @@ Em 09/10/2026, o responsável informou que a filial de Goiânia não existe mais
 - [ ] Confirmar autorização/licenciamento das imagens de produtos para exibição comercial no website.
 - [ ] Confirmar quais linhas específicas realmente integram o mix atual; vitrine é demonstrativa, não catálogo de SKUs.
 - [ ] Informar endereço escrito exato e referência para visita caso desejem publicar texto de endereço além do link de Maps.
+
+## Formulário demonstrativo (21/10/2026)
+
+- O formulário de contato valida obrigatoriedade no próprio navegador e mostra um resultado explicitamente demonstrativo.
+- Nenhum e-mail é preparado ou enviado; nenhum endpoint é invocado; nenhum dado digitado é armazenado.
+- O `action` anterior de formulário foi removido. O listener `submit` usa `preventDefault()`.
+- Antes de usar com clientes reais, será necessário implementar endpoint seguro, validação no servidor, proteção contra abuso, consentimento/aviso de privacidade e confirmação legítima de recebimento.
