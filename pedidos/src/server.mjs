@@ -11,7 +11,7 @@ import { DemoWinthorAdapter, WinthorRestAdapter } from "./winthor-adapter.mjs";
 const currentDir = dirname(fileURLToPath(import.meta.url));
 const publicDir = resolve(currentDir, "../public");
 const mime = new Map([[".html", "text/html; charset=utf-8"], [".css", "text/css; charset=utf-8"], [".js", "text/javascript; charset=utf-8"], [".svg", "image/svg+xml"], [".webp", "image/webp"]]);
-const allowedStatic = new Set(["/", "/index.html", "/app.js", "/styles.css"]);
+const allowedStatic = new Set(["/", "/index.html", "/app.js", "/styles.css", "/troia-logo.webp"]);
 const LOCAL_HOSTS = new Set(["127.0.0.1", "::1", "localhost"]);
 
 function sameSecret(received, expected) {
