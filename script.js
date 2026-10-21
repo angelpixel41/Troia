@@ -1,6 +1,40 @@
 (() => {
   "use strict";
 
+  const filters = document.querySelectorAll(".product-filter");
+  const showcase = document.querySelector(".product-showcase");
+  const products = document.querySelectorAll(".product-feature");
+  const filterStatus = document.querySelector(".filter-status");
+  filters.forEach((button) => {
+    button.addEventListener("click", () => {
+      const category = button.dataset.filter;
+      let visible = 0;
+      filters.forEach((filter) => filter.setAttribute("aria-pressed", String(filter === button)));
+      products.forEach((product) => {
+        product.hidden = category !== "all" && product.dataset.category !== category;
+        if (!product.hidden) visible++;
+      });
+      showcase.classList.toggle("is-filtered", category !== "all");
+      filterStatus.textContent = visible === 1 ? "1 marca na vitrine" : visible + " marcas na vitrine";
+    });
+  });
+
+  const progress = document.querySelector(".scroll-progress");
+  let scrollPending = false;
+  const updateProgress = () => {
+    const total = document.documentElement.scrollHeight - window.innerHeight;
+    if (progress) progress.style.width = (total > 0 ? window.scrollY / total * 100 : 0) + "%";
+    scrollPending = false;
+  };
+  window.addEventListener("scroll", () => {
+    if (!scrollPending) {
+      scrollPending = true;
+      window.requestAnimationFrame(updateProgress);
+    }
+  }, { passive: true });
+  window.addEventListener("resize", updateProgress);
+  updateProgress();
+
   const menuButton = document.getElementById("menu-toggle");
   const mobileNav = document.getElementById("mobile-nav");
 

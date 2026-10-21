@@ -1,0 +1,13 @@
+{
+  "name": "troia",
+  "account_id": "f7b8f2cb64e4cb2fe0b6a56d164f214b",
+  "compatibility_date": "2026-10-19",
+  "assets": {
+    "directory": "./.deploy",
+    "not_found_handling": "404-page"
+  },
+  "routes": [{ "pattern": "troia.pixelinfinite.com.br", "custom_domain": true }],
+  "workers_dev": false,
+  "preview_urls": false,
+  "observability": { "enabled": true }
+}

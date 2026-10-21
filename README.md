@@ -6,12 +6,9 @@ Site institucional responsivo da **Tróia Distribuição**, voltado a clientes e
 
 O site é estático (HTML, CSS e JavaScript sem build). Execute `python -m http.server 8080` na pasta do repositório e acesse `http://localhost:8080`. Use um servidor HTTP local porque os recursos usam caminhos absolutos.
 
-## Publicar no Cloudflare Pages
+## Publicação atual — Cloudflare Workers
 
-1. Cloudflare > Workers & Pages > Create > Connect to Git > `angelpixel41/Troia`.
-2. Framework: **None**. Build command: **(vazio)**. Output directory: **.** (raiz do repositório).
-3. Adicione o subdomínio `troia.pixelinfinite.com.br` em **Custom domains** do projeto Pages, mantendo o site principal `pixelinfinite.com.br` intacto. Se a zona estiver no mesmo Cloudflare, o DNS CNAME será sugerido automaticamente.
-4. Merges em `main` farão novos deploys. Valide primeiro o preview `*.pages.dev` antes de ativar o subdomínio.
+O domínio `troia.pixelinfinite.com.br` usa o Worker `troia`. Publique pelo PowerShell com `./tools/deploy.ps1`. O push ao GitHub não publica automaticamente. Consulte `docs/redesign-20261021.md`.
 
 ## Conteúdo e identidade
 
@@ -39,7 +36,9 @@ O site é estático (HTML, CSS e JavaScript sem build). Execute `python -m http.
 ## Estrutura
 
 - `index.html` — homepage institucional e metadados SEO.
-- `styles.css` — design system, responsividade e acessibilidade.
+- `styles.css` — base visual e responsividade.
+- `design.css` — direção editorial, vitrine e refinamento responsivo.
+- `wrangler.jsonc` e `tools/deploy.ps1` — publicação no Worker existente.
 - `script.js` — menu mobile, navegação e validação local do formulário de demonstração.
 - `assets/troia-logo-original.webp` — imagem do logotipo fornecida pela empresa (inclui inscrição legada na imagem).
 - `assets/troia-emblem-favicon.webp` — recorte do emblema do logotipo utilizado no favicon.
@@ -48,7 +47,7 @@ O site é estático (HTML, CSS e JavaScript sem build). Execute `python -m http.
 
 ## Manutenção
 
-Sem framework e sem dependências externas obrigatórias para renderizar. Fontes e imagens ilustrativas usam CDN externas. Os contatos no HTML devem ser revistos por um representante da empresa antes de vincular o domínio oficial.
+Sem framework e sem dependências externas obrigatórias para renderizar. As fontes usam CDN externa; imagens de produto e fotografia ilustrativa são servidas localmente. Os contatos no HTML devem ser revistos por um representante da empresa antes de vincular o domínio oficial.
 
 ## Atualização de unidade (09/10/2026)
 
@@ -58,7 +57,7 @@ O responsável confirmou que **a única sede/atuação apresentada publicamente 
 
 - Seção de marcas reformulada com cards responsivos de produtos **Pilão**, **Marilan** e **Veja**. São imagens de embalagens reais obtidas em páginas de varejistas; **não** implicam que todas as variantes estejam em estoque ou que a Tróia represente oficialmente todas as linhas.
 - URLs e respectivas origens: [Pilão 500 g](https://marche.com.br/products/cafe-pilao-torrado-e-moido-tradicional-abre-fecha-500g); [Marilan Maizena 300 g](https://www.savegnago.com.br/biscoito-marilan-maizena-300g/p); [Veja Limpeza Pesada 500 ml](https://mercado.carrefour.com.br/limpador-para-limpeza-pesada-original-veja-500ml-182621/p).
-- As imagens são carregadas dos sites citados (hotlinks). Confirmar permissão de uso das fotos para marketing com as marcas e, quando autorizado, salvar cópias otimizadas sob controle da empresa; links externos podem mudar.
+- As imagens dos três produtos são armazenadas localmente em `assets/products/`, em WebP com transparência. Confirmar permissão de uso das fotos para marketing com as marcas e, quando autorizado, salvar cópias otimizadas sob controle da empresa; links externos podem mudar.
 
 ## Localização confirmada pelo responsável (09/10/2026)
 
