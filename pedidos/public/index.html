@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0d">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Portal de Pedidos | Tróia — Protótipo</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a href="#main" class="skip">Pular para conteúdo</a>
+  <div class="demo-banner" role="status"><span class="banner-led"></span> LABORATÓRIO DE PEDIDOS · DADOS FICTÍCIOS · SEM ACESSO AO WINTHOR <span class="banner-tag">NÃO PUBLICADO</span></div>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="Tróia, portal de pedidos"><span class="brand-symbol">T<span>.</span></span><span><strong>TRÓIA</strong><small>DISTRIBUIÇÃO · B2B</small></span></a>
+      <div class="sidebar-caption">PAINEL COMERCIAL</div>
+      <nav class="side-links" aria-label="Seções">
+        <button class="nav-link is-current" type="button" data-tab="catalog" aria-current="page"><span aria-hidden="true">▦</span> Catálogo de produtos</button>
+        <button class="nav-link" type="button" data-tab="history"><span aria-hidden="true">▤</span> Pedidos registrados</button>
+      </nav>
+      <div class="sidebar-bottom"><span class="tag"><i aria-hidden="true"></i> Ambiente isolado</span><p>Protótipo para homologação comercial e integração ERP. Nenhum dado apresentado corresponde ao cadastro ou estoque real.</p></div>
+    </aside>
+    <main id="main" class="main">
+      <div class="topbar"><span class="breadcrumb">TRÓIA <span aria-hidden="true">/</span> PORTAL DE PEDIDOS</span><span class="topbar-label">Versão demonstrativa <span aria-hidden="true">↗</span></span></div>
+      <section id="view-catalog" class="view">
+        <div class="page-header">
+          <div><span class="eyebrow">SIMULAÇÃO DE COMPRA B2B</span><h1>Monte seu <em>pedido.</em></h1><p>Explore um catálogo ilustrativo e registre uma solicitação em ambiente local. A aprovação e o envio ao WinThor são etapas separadas.</p></div>
+          <span class="decor-number" aria-hidden="true">01/02</span>
+        </div>
+        <div class="content-grid">
+          <div class="products-pane">
+            <div class="section-bar"><div><span class="eyebrow">01 · SELEÇÃO</span><h2>Produtos disponíveis na demo</h2></div><span id="catalog-count" class="count">Carregando...</span></div>
+            <div class="filters"><label for="search" class="visually-hidden">Pesquisar produtos</label><input id="search" type="search" autocomplete="off" placeholder="Buscar por marca, produto ou SKU..." maxlength="80"><span class="filters-hint">Preços fictícios para demonstração</span></div>
+            <div id="product-list" class="product-list" aria-live="polite"></div>
+          </div>
+          <aside class="basket" aria-labelledby="basket-title">
+            <div class="basket-head"><div><span class="eyebrow">02 · RESUMO</span><h2 id="basket-title">Seu pedido</h2></div><span id="basket-count" class="basket-number">0</span></div>
+            <div class="basket-body">
+              <label class="form-label" for="customer">Cliente demonstrativo</label>
+              <select id="customer" required><option value="">Selecione um cliente</option></select>
+              <p class="field-helper">A seleção não representa validação do cadastro no ERP.</p>
+              <h3 class="basket-subtitle">Itens selecionados</h3>
+              <div id="cart-items" class="cart-items"><p class="empty-basket">Seu carrinho está vazio.</p></div>
+              <label class="form-label" for="note">Observação interna (opcional)</label>
+              <textarea id="note" rows="3" maxlength="500" placeholder="Informações adicionais sobre a solicitação..."></textarea>
+            </div>
+            <div class="basket-footer"><div class="total-line"><span>Total demonstrativo</span><strong id="total">R$ 0,00</strong></div><p class="basket-warning">Valores de teste, sem validade comercial. Não há reserva de estoque, faturamento ou pagamento.</p><button id="create-order" type="button" class="btn btn-primary" disabled>Registrar solicitação <span aria-hidden="true">↗</span></button><div id="feedback" class="feedback" role="status" aria-live="polite"></div></div>
+          </aside>
+        </div>
+      </section>
+      <section id="view-history" class="view" hidden>
+        <div class="page-header"><div><span class="eyebrow">AMBIENTE DEMONSTRATIVO</span><h1>Histórico de <em>pedidos.</em></h1><p>Pedidos registrados localmente aguardam aprovação interna. Não foram enviados ao WinThor.</p></div><span class="decor-number" aria-hidden="true">02/02</span></div>
+        <div class="history-head"><div><span class="eyebrow">SOLICITAÇÕES</span><h2>Pedidos no ambiente local</h2></div><button id="reload-history" class="btn btn-secondary" type="button">Atualizar ↻</button></div>
+        <div id="history-list" class="history-list" aria-live="polite"><p class="empty-state">Nenhum pedido registrado.</p></div>
+      </section>
+      <footer class="page-footer"><span>© Tróia Distribuição · Protótipo interno para homologação</span><span>Integração WinThor pendente de credenciais e contrato</span></footer>
+    </main>
+  </div>
+</body>
+</html>

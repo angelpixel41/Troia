@@ -1,0 +1,16 @@
+{
+  "name": "troia-portal-pedidos",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Protótipo B2B de pedidos WinThor isolado para homologação",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node src/server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "check": "node --check src/server.mjs && node --check src/order-service.mjs && node --check src/winthor-adapter.mjs && node --check src/oracle-catalog.mjs && node --check public/app.js"
+  },
+  "license": "UNLICENSED"
+}
